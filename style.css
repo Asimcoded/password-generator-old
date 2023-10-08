@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Satisfy;
+    src: url(fonts/Satisfy-Regular.ttf);
+}
+
+@font-face {
+    font-family: VarelaRound;
+    src: url(fonts/VarelaRound-Regular.ttf);
+}
+
+:root {
+    --text-color: #fff;
+    --primary-color: #750c0c;
+    --secondary-color: #4a0909;
+    --background-color: #1E0404;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: VarelaRound;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 0;
+}
+
+.logo {
+    text-align: right;
+}
+
+.logo p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.logo span {
+    font-family: Satisfy;
+    font-size: 18px;
+}
+
+.outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.container p {
+    font-size: 30px;
+    margin-top: 45px;
+}
+
+.container p span {
+    background: linear-gradient(270deg, #750C0C 32.75%, #d6b2b2 58.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.password-box{
+    display: flex;
+    width: 100%;
+    background-color: var(--text-color);
+    border-radius: 10px;
+    height: 50px;
+    position: relative;
+    margin: 45px 0;
+    align-items: center;
+    padding: 10px;
+}
+.password-box input{
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+}
+.field-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 18px;   
+}
+#length{
+    height: 35px;
+    border-radius: 10px;
+    width: 60px;
+    border: 0;
+    outline: none;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+.field-box input[type="checkbox"]{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    appearance: none;
+    background-color: var(--text-color);
+    border: 0;
+    transition: .25s all linear;
+}
+.field-box input[type="checkbox"]:checked{
+    background-color: var(--primary-color);
+    background-image: url(images/check-1.svg);
+    /* background-size: cover; */
+    background-position: center;
+}
+#generate{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border: 0;
+    color: var(--text-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#generate img{
+    height: 30px;
+    margin-right: 10px;
+}
+.link-icon img{
+    width: 25px;
+    margin-left: 10px;
+}
