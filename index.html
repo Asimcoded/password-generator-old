@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Password Generator By Asim Das</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/lock_2333533.png" type="image/png">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <nav>
+        <div class="logo">
+            <h1>Password Generator</h1>
+            <span>By Asim Das</span>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>
+            Generate secure and random password with Password generator by Asim Das
+        </h1>
+        <div class="password-box">
+            <input type="text" id="password" placeholder="Password" readonly>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <g clip-path="url(#clip0_1_20)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 29.9982H22.9356V7.06262H0V29.9982ZM21.1713 8.82691V28.234H1.76428V8.82691H21.1713ZM30 0V22.9374H24.7072V21.1713H28.2357V1.76428H8.82867V5.29281H7.06262V0H30ZM5.29283 15.8895H17.6428V14.1252H5.29281V15.8895H5.29283ZM5.29283 22.9374H17.6428V21.1713H5.29281V22.9374H5.29283ZM5.29283 19.4126H14.1142V17.6483H5.29281V19.4126H5.29283Z" fill="#750C0C" stroke="#750C0C" stroke-width="0.0961538"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_20">
+                <rect width="30" height="30" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+        </div>
+        <div class="field-box">
+            <span>Password Length</span>
+            <input type="text" id="length" value="12">
+        </div>
+        <div class="field-box">
+            <span>Upper Case</span>
+            <input type="checkbox" id="uppercase">
+        </div>
+        <div class="field-box">
+            <span>Lower Case</span>
+            <input type="checkbox" id="lowercase">
+        </div>
+        <div class="field-box">
+            <span>Numbers Case</span>
+            <input type="checkbox" id="number">
+        </div>
+        <div class="field-box">
+            <span>Symbols</span>
+            <input type="checkbox" id="symbol">
+        </div>
+        <button id="generate"><img src="images/password.svg" alt="...">Generate</button>
+        <div class="links-box">
+            <span>Social Links</span>
+            <div class="link-icon">
+                <img src="images/github.svg" alt="GitHub">
+                <img src="images/instagram.svg" alt="Instagram">
+                <img src="images/Twitter X.svg" alt="Twiter">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
