@@ -14,6 +14,7 @@ function createPassword() {
     // let length = lengthBox.value;
     let password = ""
     let allChar = "";
+    if(lengthBox.value >= 4){
     if (upperCaseBox.checked) {
         allChar += upperCase;
     }
@@ -29,19 +30,26 @@ function createPassword() {
 
     if (upperCaseBox.checked == false && lowerCaseBox.checked == false && numberBox.checked == false && symbolBox.checked == false) {
         console.log("Nothing is checked");
+        alert('Please check the boxs !')
     }
-    // else{
-    //     while(lengthBox.value > password.length){
-    //     }
-    //     // console.log(allChar);
-    //     console.log(password);
-    //     // console.log(length); 
-    // }
     else {
         for (let i = 0; i < lengthBox.value; i++) {
             password += allChar[Math.floor(Math.random() * allChar.length)];
         }
         passwordBox.value = password
+    }}
+    else{
+        alert("The minimum range of password is 4 or greater !")
     }
 }
+function copyPassword(){
+    passwordBox.select();
+    passwordBox.setSelectionRange(0, 99999);
+    document.execCommand("copy")
+    navigator.clipboard.writeText(passwordBox.value);
+    document.querySelector('.tooltip').style.display = "block";
+    setTimeout(()=>document.querySelector('.tooltip').style.display = "none",2000)
+}
+createPassword()
 document.querySelector('#generate').addEventListener('click', createPassword)
+document.querySelector('.password-box button').addEventListener('click',copyPassword)

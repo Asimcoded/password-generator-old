@@ -84,6 +84,20 @@ nav {
     align-items: center;
     padding: 10px;
 }
+.password-box .tooltip{
+    position: absolute;
+    background-color:var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    right: 0;
+    bottom: -40px;
+    display: none;
+}
+.password-box button{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
 .password-box input{
     border-radius: 10px;
     border: 0;
