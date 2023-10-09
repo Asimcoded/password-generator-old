@@ -108,6 +108,11 @@ nav {
     color: var(--secondary-color);
     font-size: 18px;
 }
+#length::-webkit-inner-spin-button, 
+#length::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none; 
+}
 .field-box input[type="checkbox"]{
     width: 35px;
     height: 35px;
