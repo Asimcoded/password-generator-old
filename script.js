@@ -8,7 +8,7 @@ const symbolBox = document.getElementById('symbol');
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase = upperCase.toLowerCase();
 const number = "1234567890";
-const symbol = "~!@#$%^&*()_+=-[]{}\|/?><";
+const symbols = "~!@#$%^&*()_+=-[]{}\|/?><";
 
 function createPassword() {
     // let length = lengthBox.value;
@@ -25,7 +25,7 @@ function createPassword() {
         allChar += number;
     }
     if (symbolBox.checked) {
-        allChar += symbol;
+        allChar += symbols;
     }
 
     if (upperCaseBox.checked == false && lowerCaseBox.checked == false && numberBox.checked == false && symbolBox.checked == false) {
